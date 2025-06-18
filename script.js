@@ -181,12 +181,12 @@ btn.addEventListener("click", () => {
     }
   }
 });
-let clickStart = 0;
-const btn = document.getElementById("startBtn");
-const messages = [
-  "senyum duluuuu!! 😄",
-  "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
-];
+// let clickStart = 0;
+// const btn = document.getElementById("startBtn");
+// const messages = [
+//   "senyum duluuuu!! 😄",
+//   "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
+// ];
 
 // btn.addEventListener("click", () => {
 //   clickStart++;
