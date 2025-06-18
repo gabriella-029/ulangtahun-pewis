@@ -155,60 +155,38 @@ setTimeout(() => {
 }, 10000); // pelukan muncul setelah 10 detik
 
 let clickStart = 0;
-const startMessages = [
-  "Are you sureee?", 
-  "Yakin ga nyesel?", 
-  "Oke gaskeun!"
+const btn = document.getElementById("startBtn");
+const messages = [
+  "Senyum duluuuu!! 😄",
+  "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
 ];
 
-const startBtn = document.getElementById("startBtn");
-
-startBtn.addEventListener("click", () => {
+btn.addEventListener("click", () => {
   clickStart++;
+
   if (clickStart < 3) {
-    startBtn.textContent = startMessages[clickStart - 1];
+    btn.textContent = messages[clickStart - 1];
   } else {
-    startBtn.style.display = "none";
+    btn.style.display = "none"; // sembunyikan tombol
+
+    // Tampilkan konten utama
     document.getElementById("mainContent").style.display = "block";
+
+    // Play musik
     document.getElementById("bgMusic").play();
-    typeEffect(); // <--- Ini memanggil fungsi ngetik
+
+    // Mulai animasi ketik jika ada
+    if (typeof typeEffect === "function") {
+      typeEffect();
+    }
   }
 });
-
-
-// let clickStart = 0;
-// const btn = document.getElementById("startBtn");
-// const messages = [
-//   "Senyum duluuuu!! 😄",
-//   "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
-// ];
-
-// btn.addEventListener("click", () => {
-//   clickStart++;
-
-//   if (clickStart < 3) {
-//     btn.textContent = messages[clickStart - 1];
-//   } else {
-//     btn.style.display = "none"; // sembunyikan tombol
-
-//     // Tampilkan konten utama
-//     document.getElementById("mainContent").style.display = "block";
-
-//     // Play musik
-//     document.getElementById("bgMusic").play();
-
-//     // Mulai animasi ketik jika ada
-//     if (typeof typeEffect === "function") {
-//       typeEffect();
-//     }
-//   }
-// });
-// let clickStart = 0;
-// const btn = document.getElementById("startBtn");
-// const messages = [
-//   "senyum duluuuu!! 😄",
-//   "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
-// ];
+let clickStart = 0;
+const btn = document.getElementById("startBtn");
+const messages = [
+  "senyum duluuuu!! 😄",
+  "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
+];
 
 // btn.addEventListener("click", () => {
 //   clickStart++;
