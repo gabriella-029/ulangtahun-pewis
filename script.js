@@ -43,7 +43,7 @@ function revealWish() {
   audio.play();
 }
 
-const message = "18 Juni 2025 \n Hai Pewis! \n Sampai juga kita di doa tahun lalu <br>  bertemu dan tetap berteman di ulangtahung berikutnya.<br>Mari bertumbuh dan menjadi teman yang baik disetiap masa hidup kita. <33";
+const message = "18 Juni 2025 \n Hai Pewis!  Sampai juga kita di doa tahun lalu, bertemu dan tetap berteman di ulangtahung berikutnya.Mari bertumbuh dan menjadi teman yang baik disetiap masa hidup kita. <33";
 let index = 0;
 
 function typeEffect() {
