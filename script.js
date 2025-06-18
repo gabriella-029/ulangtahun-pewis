@@ -4,7 +4,7 @@ const photos = [
   { src: "photo1.jpg", caption: "Foto favoti aku!! We Look so happy~" },
   { src: "photo2.jpg", caption: "Our Big Almamater!!! \nLangkah kita kala itu benar-benar bersinar " },
   { src: "photo3.jpg", caption: "ahahaha u noticed my cam was broken huhuu~" },
-  { src: "photo4.jpg", caption: "I loved semua cara kita untuk saling tolong menolong. \n Let's cary it together, \nI'll always have your back Priss!" },
+  { src: "photo4.jpg", caption: "I loved semua cara kita untuk saling tolong menolong. \n Let's cary it together, \n Yuu always have my back Priss!" },
   { src: "photo5.jpg", caption: "Rasanya udah lama kita tida menikmati banyak rasa berdua. \nNonton yukk?? \nada film kesukaan kita ga yaa?" },
   { src: "photo6.jpg", caption: "Ini nangisin playlist kita!! \nI hug you, always!" },
   { src: "photo7.jpg", caption: "Our favorit menuuu!!! \nLaper Ga?? Yokk, \nmakan bareng aku lagi yokk???\nKalau perutnya lapar, hatinya jangan ikut laper yaaa anak sulung" },
