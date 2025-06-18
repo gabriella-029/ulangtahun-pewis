@@ -89,9 +89,7 @@ button.addEventListener("click", () => {
       hiddenWish.classList.remove("hidden");
 
       // Mainkan musik jika mau
-      const audio = new Audio('DISKORIA.mp3');
-      audio.play();
-
+      
       // Ledakan konfeti
       if (window.confetti) 
       {
