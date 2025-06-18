@@ -181,37 +181,3 @@ btn.addEventListener("click", () => {
     }
   }
 });
-// let clickStart = 0;
-// const btn = document.getElementById("startBtn");
-// const messages = [
-//   "senyum duluuuu!! 😄",
-//   "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
-// ];
-
-// btn.addEventListener("click", () => {
-//   clickStart++;
-
-//   if (clickStart < 3) {
-//     btn.textContent = messages[clickStart - 1];
-//   } else {
-//     btn.style.display = "none"; // sembunyikan tombol
-
-//     // Mulai musik
-//     const music = document.getElementById("bgMusic");
-//     music.play();
-
-//     // Jalankan animasi mengetik dan semua isi
-//     if (typeof typeEffect === "function") {
-//       typeEffect(); // Panggil fungsi animasi ketik
-//     }
-
-//     // Tampilkan semua bagian awal halaman (jika sebelumnya disembunyikan)
-//     document.getElementById("typingText").style.display = "block";
-//     document.querySelector("h1").style.display = "block";
-//     document.querySelector("p").style.display = "block";
-//     document.querySelector(".slideshow").style.display = "block";
-//   }
-// });
-
-
-
