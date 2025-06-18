@@ -171,7 +171,7 @@ btn.addEventListener("click", () => {
     document.getElementById("mainContent").style.display = "block";
 
     // Play musik
-    document.getElementById("bgMusic").play();
+    // document.getElementById("bgMusic").play();
 
     // Mulai animasi ketik jika ada
     if (typeof typeEffect === "function") {
