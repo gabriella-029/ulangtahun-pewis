@@ -33,7 +33,7 @@ setInterval(() => {
     // Fade-in
     captionElem.style.opacity = 1;
   }, 400);
-}, 4000); // 4 detik ganti
+}, 6000); // 4 detik ganti
 
 function revealWish() {
   document.getElementById("hiddenWish").classList.remove("hidden");
@@ -43,7 +43,7 @@ function revealWish() {
   audio.play();
 }
 
-const message = "18 Juni 2025 \n Hai Pewis! \n Sampai juga kita di doa tahun lalu \n bertemu dan tetap berteman di ulangtahung berikutnya.";
+const message = "18 Juni 2025 \n Hai Pewis! \n Sampai juga kita di doa tahun lalu \n bertemu dan tetap berteman di ulangtahung berikutnya.\nMari bertumbuh dan menjadi teman yang baik disetiap masa hidup kita. <33";
 let index = 0;
 
 function typeEffect() {
