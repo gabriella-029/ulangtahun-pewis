@@ -52,7 +52,7 @@ function typeEffect() {
     const char = message.charAt(index) === '\n' ? '<br>' : message.charAt(index);
     target.innerHTML += char;
     index++;
-    setTimeout(typeEffect, 70); // Kecepatan ketik
+    setTimeout(typeEffect, 900); // Kecepatan ketik
   } else {
    document.getElementById("nextPart").style.display = "block";
   }
