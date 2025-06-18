@@ -48,13 +48,15 @@ let index = 0;
 
 function typeEffect() {
   const target = document.getElementById("typingText");
+
   if (index < message.length) {
     const char = message.charAt(index) === '\n' ? '<br>' : message.charAt(index);
     target.innerHTML += char;
     index++;
-    setTimeout(typeEffect, 900); // Kecepatan ketik
+    setTimeout(typeEffect, 90); // Kecepatan ketik
   } else {
-   document.getElementById("nextPart").style.display = "block";
+    // Munculkan tombol setelah efek selesai
+    document.getElementById("nextPart").style.display = "block";
   }
 }
 
@@ -152,34 +154,55 @@ setTimeout(() => {
   document.getElementById("hugSection").classList.remove("hidden");
 }, 10000); // pelukan muncul setelah 10 detik
 
-
 let clickStart = 0;
-const btn = document.getElementById("startBtn");
-const messages = [
-  "Senyum duluuuu!! 😄",
-  "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
+const startMessages = [
+  "Are you sureee?", 
+  "Yakin ga nyesel?", 
+  "Oke gaskeun!"
 ];
 
-btn.addEventListener("click", () => {
+const startBtn = document.getElementById("startBtn");
+
+startBtn.addEventListener("click", () => {
   clickStart++;
-
   if (clickStart < 3) {
-    btn.textContent = messages[clickStart - 1];
+    startBtn.textContent = startMessages[clickStart - 1];
   } else {
-    btn.style.display = "none"; // sembunyikan tombol
-
-    // Tampilkan konten utama
+    startBtn.style.display = "none";
     document.getElementById("mainContent").style.display = "block";
-
-    // Play musik
     document.getElementById("bgMusic").play();
-
-    // Mulai animasi ketik jika ada
-    if (typeof typeEffect === "function") {
-      typeEffect();
-    }
+    typeEffect(); // <--- Ini memanggil fungsi ngetik
   }
 });
+
+
+// let clickStart = 0;
+// const btn = document.getElementById("startBtn");
+// const messages = [
+//   "Senyum duluuuu!! 😄",
+//   "Lebih lebarrrrr dan mari menari bersamaakuu 💃🕺",
+// ];
+
+// btn.addEventListener("click", () => {
+//   clickStart++;
+
+//   if (clickStart < 3) {
+//     btn.textContent = messages[clickStart - 1];
+//   } else {
+//     btn.style.display = "none"; // sembunyikan tombol
+
+//     // Tampilkan konten utama
+//     document.getElementById("mainContent").style.display = "block";
+
+//     // Play musik
+//     document.getElementById("bgMusic").play();
+
+//     // Mulai animasi ketik jika ada
+//     if (typeof typeEffect === "function") {
+//       typeEffect();
+//     }
+//   }
+// });
 // let clickStart = 0;
 // const btn = document.getElementById("startBtn");
 // const messages = [
