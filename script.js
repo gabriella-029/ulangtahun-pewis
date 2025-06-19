@@ -128,8 +128,13 @@ const quotes = [
   "Terima kasih sudah menjadi dirimu 💛",
   "Kalau capek, istirahat ya. Pelan-pelan aja 🤍",
   "Kamu pantas bahagia, Priss 🌷",
-  "Aku bersyukur pernah dan masih ada kamu",
+  "Aku bersyukur pernah dan masih ada dirimu, Pris",
   "Selalu ada peluk meski dari jauh 🤗"
+  "Jangan bosan jadi manusia 🤗"
+  "Selamat bertumbuh!"
+  "If Flower need time to bloom, so you are"
+  "Bahagia mulainya dari diri sendiri"
+  "Kita yang mengusahakan ekspektasi kita"
 ];
 
 let qIndex = 0;
